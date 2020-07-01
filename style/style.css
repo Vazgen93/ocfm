@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal > .button {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.modal > .button:hover {
+  background-color: rgba(248, 248, 248, 0.3);
+}
+.modal > .button span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(245, 245, 245);
+  position: absolute;
+}
+.modal > .button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.modal > .button span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.modal > img {
+  width: 90%;
+  height: 90%;
+  z-index: 15;
+}
+
+main {
+  width: 100%;
+
+  /* background-image: url(./img/background/background.jpg); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+/* Header */
+
+.header > div:nth-child(1) {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #41758d;
+  color: white;
+  z-index: 1;
+}
+
+.contacts > nav {
+  width: 1000px;
+}
+
+.contacts > nav > ul {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.contacts > nav > ul > li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contacts > nav > ul > li > img {
+  width: 16px;
+  padding-right: 6px;
+}
+.header > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 15%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.logo > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.heading {
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: rgb(245, 245, 245);
+  z-index: 1;
+}
+
+.styleBlock1 {
+  position: absolute;
+  width: 90%;
+  height: 30%;
+  border-radius: 10px;
+  background-image: url(../img/background/textur2.jpg);
+  background-color: rgb(0, 0, 0);
+  z-index: 0;
+}
+
+/* Header---------------------------------------------------------------------- */
+/* Frree shoping */
+.free_shoping {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  border-bottom: 5px solid #41758d;
+}
+.free_shoping > div {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.free_shoping > div img {
+  height: 100%;
+  position: absolute;
+
+  animation: Free 10s linear infinite backwards;
+}
+.free_shoping > p {
+  font-size: 58px;
+  color: #41758d;
+}
+/* Frree shoping---------------------------------------------------------------------- */
+/* About Us */
+.block {
+  width: 100%;
+  height: 500px;
+}
+.about {
+  width: 100%;
+  display: flex;
+  margin: 15px 0;
+  justify-content: center;
+}
+.about_container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #41758d;
+}
+.about_container > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+}
+.about_container {
+  color: #252525;
+}
+.product_title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 2px;
+}
+.product_title > h2 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* About Us -------------------------------------------------------------------------*/
+
+/* Floorings */
+
+.floorings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+.product {
+  box-sizing: border-box;
+  width: 44%;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0px;
+  position: relative;
+  border: 1px solid #41758d;
+  box-shadow: 0px 0px 5px;
+}
+.product_name {
+  width: 90%;
+  padding: 10px 0;
+}
+.product_name > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #41758d;
+  font-weight: bold;
+}
+.product_img {
+  width: 90%;
+  height: 300px;
+}
+.product_img > img {
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+}
+.zoom {
+  width: 1000px;
+}
+.product_price {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  background-color: #41758d;
+  padding: 15px 5px;
+  
+}
+.product_price::before{
+    content: '';
+    display: block;
+    border: 10px solid transparent;
+    border-right: 15px solid #41758d;
+    position: absolute;
+    left: -25px;
+    top: calc(50% - 10px);
+}
+.product_price > p {
+    color: #ffffff;
+    font-size: 15px;
+}
+.product_info {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 10px 0;
+}
+.outer_info > p span:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.outer_info > p span:nth-child(2) {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+.quantiti {
+  display: flex;
+  align-items: center;
+}
+.quantiti > h2 {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.quantity_value{
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #41758d;
+    outline: none;
+}
+.free {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.free > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+
+}
+.free > div img {
+  height: 100%;
+  margin-right: 10px;
+}
+.buy {
+  padding: 5px 30px;
+  border: 2px solid #41758d;
+  color: #41758d;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  background: none;
+  transition: 0.3s;
+  outline: none;
+}
+.buy:hover {
+  background-color: #41758d;
+  color: #ffffff;
+}
+
+/* Floorings ----------------------------------------------------------------------- */
+
+/* Pagination*/
+.pagination {
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > ul {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagination > ul li {
+  display: flex;
+  
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #41758d;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pagination > ul li:hover {
+  background-color: #41758d6a;
+}
+.pagination > ul li a {
+
+  text-decoration: none;
+  font-size: 18px;
+  color: snow;
+  padding: 5px 10px;
+
+}
+.active {
+  background-color: #41758d;
+}
+/* Pagination ----------------------------------------------------------------------- */
+/* Footer   */
+footer {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/footer/footer.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+footer > ul {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > ul li {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+footer > ul img {
+  width: 20px;
+  margin: 0px 10px;
+}
+/* Footer -------------------------------------------------------------------------- */
+@keyframes Free {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
